@@ -4,7 +4,8 @@
 		description = "Description TK",
 		url = "https://pudding.cool",
 		keywords = "",
-		preloadFont = []
+		preloadFont = [],
+		hide = false
 	} = $props();
 </script>
 
@@ -13,6 +14,10 @@
 	<meta name="description" content={description} />
 	<meta name="author" content="The Pudding" />
 	<meta name="news_keywords" content={keywords} />
+
+	{#if hide}
+		<meta name="robots" content="noindex, nofollow" />
+	{/if}
 
 	<meta property="og:title" content={title} />
 	<meta property="og:site_name" content="The Pudding" />

@@ -11,6 +11,7 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@google/genai": "^1.8.0",
 		"@lucide/svelte": "^0.525.0",
 		"@rollup/plugin-dsv": "^3.0.5",
 		"@sveltejs/adapter-static": "^3.0.8",
