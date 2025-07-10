@@ -1,10 +1,15 @@
 <script>
+	import Trash from "@lucide/svelte/icons/trash";
+	import Pilcrow from "@lucide/svelte/icons/pilcrow";
+	import TypeOutline from "@lucide/svelte/icons/type-outline";
+
 	let { content } = $props();
 
 	let selected = $state(null);
 
 	function onToggle(i) {
-		selected = i;
+		if (selected === i) selected = null;
+		else selected = i;
 	}
 </script>
 
@@ -19,11 +24,18 @@
 			<span class="line" class:active onclick={() => onToggle(i)}
 				>{value}<span class="tip">{i + 1} {t} - {a}</span>
 				<span class="buttons">
-					<button>¶</button>
-					<button>+</button>
+					<span class="inner">
+						<button><Trash></Trash></button>
+						<button><Pilcrow></Pilcrow></button>
+						<button><TypeOutline></TypeOutline></button>
+					</span>
 				</span></span
 			>
 		{/each}
+
+		{#if !selected}
+			<span class="cursor"></span>
+		{/if}
 	</p>
 </div>
 
@@ -32,12 +44,14 @@
 		line-height: 1.6;
 		user-select: none;
 		font-size: var(--24px);
+		padding: 4em;
 	}
 
 	.line {
 		padding: 0.25em 0;
 		position: relative;
 		cursor: pointer;
+		vertical-align: middle;
 	}
 
 	.line:hover {
@@ -51,6 +65,7 @@
 	.tip {
 		display: none;
 		position: absolute;
+		bottom: 100%;
 		background: #000;
 		padding: 0.5em;
 		color: #fff;
@@ -62,20 +77,55 @@
 		display: block;
 	}
 
-	.line:hover .buttons {
-		opacity: 1;
+	.buttons {
+		position: relative;
+		display: none;
+		vertical-align: text-bottom;
 	}
 
-	.buttons {
+	.inner {
+		position: absolute;
+		bottom: 0;
+		right: 0;
 		display: inline-flex;
-		gap: 0.25em;
-		opacity: 0;
+		gap: 2px;
 		margin-right: 0.25em;
+		z-index: var(--z-overlay);
+		width: 6em;
+		justify-content: flex-end;
+		align-items: center;
+		transform: translateY(0.125em);
+	}
+
+	.active .buttons {
+		display: inline-block;
 	}
 
 	button {
 		font-size: var(--16px);
-		padding: 0.125em;
-		margin: 0;
+		padding: 0.25em;
+		border: 2px solid #fff;
+	}
+
+	.cursor {
+		display: inline-block;
+		width: 0.5em;
+		height: 1em;
+		background: plum;
+		margin-left: 0.25em;
+		vertical-align: middle;
+		animation: blink 1s infinite step-end;
+	}
+
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
 </style>
