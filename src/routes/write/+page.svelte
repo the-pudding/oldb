@@ -14,7 +14,9 @@
 			"p",
 			...data.slice(3, 6),
 			"p",
-			...data.slice(6, 9)
+			...data.slice(6, 11),
+			"p",
+			...data.slice(11, 16)
 		];
 	});
 </script>
