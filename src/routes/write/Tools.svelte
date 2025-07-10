@@ -1,4 +1,4 @@
 <div class="c">
-	<h2>Tools</h2>
+	<h3>Tools</h3>
 	<button>Undo</button>
 </div>

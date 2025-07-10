@@ -5,24 +5,35 @@
 	import Filters from "./Filters.svelte";
 	import Tools from "./Tools.svelte";
 	import Story from "./Story.svelte";
+	import { cento } from "$runes/cento.svelte.js";
 
-	let story = $state(data.slice(0, 10));
+	$effect(() => {
+		cento.lines = [
+			"p",
+			...data.slice(0, 3),
+			"p",
+			...data.slice(3, 6),
+			"p",
+			...data.slice(6, 9)
+		];
+	});
 </script>
 
 <Meta hide={true} />
 
 <div class="c">
 	<div class="ui">
+		<h1>Cento Fiction Maker</h1>
 		<Tools></Tools>
 		<hr />
 
-		<Filters></Filters>
+		<Filters {data}></Filters>
 		<hr />
 
 		<Gemini></Gemini>
 	</div>
 	<div class="story">
-		<Story content={story}></Story>
+		<Story></Story>
 	</div>
 </div>
 
@@ -45,7 +56,7 @@
 		width: 480px;
 	}
 	hr {
-		margin: 1em 0;
+		margin-top: 1em;
 	}
 
 	.story {
@@ -55,5 +66,12 @@
 		width: 100%;
 		height: 100svh;
 		overflow-y: scroll;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: var(--20px);
+		margin: 0;
 	}
 </style>

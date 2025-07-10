@@ -20,7 +20,7 @@
 </script>
 
 <div class="c">
-	<h2><span><Sparkles></Sparkles></span> Suggestions</h2>
+	<h3><span><Sparkles></Sparkles></span> Suggestions</h3>
 	<div class="setup" class:visible={!geminiReady}>
 		<p>Enter your Gemini API key below to see suggestions.</p>
 		<div class="f">
@@ -55,12 +55,12 @@
 		display: block;
 	}
 
-	h2 {
+	h3 {
 		display: flex;
 		align-items: center;
 	}
 
-	h2 span {
+	h3 span {
 		display: inline-block;
 		width: 1em;
 		margin-right: 0.25em;
