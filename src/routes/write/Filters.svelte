@@ -4,8 +4,12 @@
 
 	let { data } = $props();
 
+	let searchValue = $state("");
+
 	let lines = $derived.by(() => {
-		return data.slice(0, 10);
+		return data.filter((d) => {
+			return d.value.toLowerCase().includes(searchValue.toLowerCase());
+		});
 	});
 
 	function onAdd(line) {
@@ -15,14 +19,21 @@
 
 <div class="c">
 	<h3>Filters</h3>
+
+	<div>
+		<label for="search">Search</label>
+		<input
+			type="text"
+			placeholder="Search for word..."
+			bind:value={searchValue}
+			oninput={onSearch}
+		/>
+	</div>
+
 	<details>
 		<summary>Toggle Filters</summary>
-		<div class="filters">
-			<div>
-				<label for="search">Search</label>
-				<input type="text" placeholder="Search for word..." />
-			</div>
 
+		<div class="filters">
 			<div>
 				<label for="filter">POV</label>
 				<select>
