@@ -6,7 +6,12 @@
 	<h2>Filters</h2>
 	<div>
 		<div>
-			<label for="filter">Perspective</label>
+			<label for="search">Search</label>
+			<input type="text" placeholder="Search for word..." />
+		</div>
+
+		<div>
+			<label for="filter">POV</label>
 			<select>
 				<option>All</option>
 				<option>First Person</option>
@@ -15,8 +20,44 @@
 			</select>
 		</div>
 		<div>
-			<label for="search">Search</label>
-			<input type="text" placeholder="Search for word..." />
+			<label for="filter">Dialogue</label>
+			<select>
+				<option>All</option>
+			</select>
+		</div>
+		<div>
+			<label for="filter">Tense</label>
+			<select>
+				<option>All</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="filter">Has character name</label>
+			<select>
+				<option>All</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="filter">Is metaphor</label>
+			<select>
+				<option>All</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="filter">Is similie</label>
+			<select>
+				<option>All</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="filter">Approach</label>
+			<select>
+				<option>All</option>
+			</select>
 		</div>
 	</div>
 
