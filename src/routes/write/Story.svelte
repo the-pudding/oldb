@@ -52,6 +52,7 @@
 		position: relative;
 		cursor: pointer;
 		vertical-align: middle;
+		font-family: var(--serif);
 	}
 
 	.line:hover {

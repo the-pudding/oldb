@@ -1,4 +1,5 @@
 <script>
+	import Sparkles from "@lucide/svelte/icons/sparkles";
 	import * as gemini from "$utils/gemini.js";
 	let apiKey = $state(undefined);
 	let geminiReady = $state(false);
@@ -19,15 +20,11 @@
 </script>
 
 <div class="c">
-	<h2>Gemini Assistant</h2>
+	<h2><span><Sparkles></Sparkles></span> Suggestions</h2>
 	<div class="setup" class:visible={!geminiReady}>
-		<p>To get recommendations, please enter your Gemini API key below.</p>
+		<p>Enter your Gemini API key below to see suggestions.</p>
 		<div class="f">
-			<input
-				type="text"
-				placeholder="Enter your Gemini key..."
-				bind:value={apiKey}
-			/>
+			<input type="text" placeholder="Gemini key..." bind:value={apiKey} />
 			<button onclick={onSetup}>Use</button>
 		</div>
 	</div>
@@ -56,5 +53,16 @@
 
 	.c .visible {
 		display: block;
+	}
+
+	h2 {
+		display: flex;
+		align-items: center;
+	}
+
+	h2 span {
+		display: inline-block;
+		width: 1em;
+		margin-right: 0.25em;
 	}
 </style>

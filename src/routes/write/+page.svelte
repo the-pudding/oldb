@@ -13,7 +13,6 @@
 
 <div class="c">
 	<div class="ui">
-		<h1>Story Writer</h1>
 		<Tools></Tools>
 		<hr />
 
