@@ -1,31 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-		<link href="./_app/immutable/assets/0.BAopVfog.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.B1GDZlqX.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.RCZmkh3V.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CU6HzLAg.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BHvKaI0D.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/B3wduc6V.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CPXtKRoO.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.rGrPxviw.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/K_olR3Fq.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/DYk9jgrW.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/COIoHyjx.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.B7R9qj3m.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/CVuzVX-l.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.Db6hGbg0.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/BOrptQ56.js"><!--[--><meta name="description" content="Description TK"/> <meta name="author" content="The Pudding"/> <meta name="news_keywords" content=""/> <!--[!--><!--]--> <meta property="og:title" content="Title TK"/> <meta property="og:site_name" content="The Pudding"/> <meta property="og:url" content="https://pudding.cool"/> <meta property="og:description" content="Description TK"/> <meta property="og:type" content="article"/> <meta property="og:locale" content="en_US"/> <meta property="og:image" content="https://pudding.cool/assets/social-facebook.jpg"/> <meta property="og:image:type" content="image/jpeg"/> <meta property="og:image:width" content="1200"/> <meta property="og:image:height" content="628"/> <meta name="twitter:card" content="summary_large_image"/> <meta name="twitter:site" content="https://pudding.cool"/> <meta name="twitter:creator" content="@puddingviz"/> <meta name="twitter:title" content="Title TK"/> <meta name="twitter:description" content="Description TK"/> <meta name="twitter:image:src" content="https://pudding.cool/assets/social-twitter.jpg"/> <meta name="robots" content="max-image-preview:large"/> <link rel="canonical" href="https://pudding.cool/"/> <!--[--><link rel="preload" href="https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2" as="font" type="font/woff2" crossorigin=""/><link rel="preload" href="https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2" as="font" type="font/woff2" crossorigin=""/><link rel="preload" href="https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2" as="font" type="font/woff2" crossorigin=""/><link rel="preload" href="https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff2" as="font" type="font/woff2" crossorigin=""/><!--]--><!--]--><title>Title TK</title>
-</head>
-
-<body>
-	<a href="#content" class="skip-to-main">Skip to main content</a>
-	<div><!--[--><!--[--><!----><!--[--><header class="svelte-rc4lx6"><div class="top svelte-rc4lx6"><div class="acronym svelte-rc4lx6"><strong>OLDb</strong></div> <div class="links svelte-rc4lx6"><a href="#">search</a> <a href="#">submit a book</a> <a href="#">about</a></div></div> <div class="bottom svelte-rc4lx6"><div class="logo svelte-rc4lx6"><!----><svg width="111" height="147" viewBox="0 0 111 147" fill="none" xmlns="http://www.w3.org/2000/svg">
+import{s as w,a as u}from"../chunks/K_olR3Fq.js";import{t as g,S as f,D as b,U as y,am as Z,E as v,C as x,y as D,G as O,z as B,T as _,B as E,an as $,x as c,f as L,ao as M,c as n,r as p,ap as F,a as m,p as S,aq as A,ar as T,b as U,ai as R}from"../chunks/B3wduc6V.js";import{i as H}from"../chunks/DYk9jgrW.js";import{p as N}from"../chunks/CVuzVX-l.js";function j(k,s,r=!1,l=!1,C=!1){var d=k,o="";g(()=>{var i=y;if(o===(o=s()??"")){f&&b();return}if(i.nodes_start!==null&&(Z(i.nodes_start,i.nodes_end),i.nodes_start=i.nodes_end=null),o!==""){if(f){v.data;for(var t=b(),h=t;t!==null&&(t.nodeType!==x||t.data!=="");)h=t,t=D(t);if(t===null)throw O(),B;_(v,h),d=E(t);return}var e=o+"";r?e=`<svg>${e}</svg>`:l&&(e=`<math>${e}</math>`);var a=$(e);if((r||l)&&(a=c(a)),_(c(a),a.lastChild),r||l)for(;c(a);)d.before(c(a));else d.before(a)}})}const z=!0,q="always",W=Object.freeze(Object.defineProperty({__proto__:null,prerender:z,trailingSlash:q},Symbol.toStringTag,{value:"Module"})),G=`<svg width="111" height="147" viewBox="0 0 111 147" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M93.4955 101.5C94.9955 89 107.104 92.5174 105.995 100.548C103.495 118.653 103.495 118.653 100.495 142" stroke="black" stroke-width="8" stroke-linecap="round"/>
 <path d="M93.4955 101.5C94.9955 89 107.104 92.5174 105.995 100.548C103.495 118.653 103.495 118.653 100.495 142" stroke="#B3774D" stroke-width="4" stroke-linecap="round"/>
 <path d="M47.4385 47.2939C51.2935 59.3736 52.1658 67.2028 46.0258 67.9447C36.7817 77.368 36.6603 70.2979 28.7891 56.7132C20.2989 40.0275 23.4288 30.8565 29.4877 28.9229C35.5467 26.9893 43.5836 35.2143 47.4385 47.2939Z" fill="#B3E6DD"/>
@@ -73,31 +46,5 @@
 <path d="M75.9955 26C74.1622 28 68.7955 31.6 61.9955 30" stroke="black" stroke-linecap="round"/>
 <path d="M59.8362 98.5997C57.3837 96.5147 48.8751 93.6018 43.6783 91.8008C40.123 87.4647 45.1612 81.4074 45.8252 77.9343C47.1505 74.8098 51.604 65.5639 54.4955 64.5C57.387 63.4361 59.4133 65.6107 59.8362 67.5C58.0708 69.1182 52.671 77.0136 51.3462 79.3738C50.0213 81.7339 49.4019 85.3752 48.4655 86.972C54.7982 88.5491 63.1225 95.7619 63.1225 95.7619C63.1225 95.7619 68.4992 92.5212 68.3751 97.4006C68.2511 102.28 61.2343 99.7883 59.8362 98.5997Z" fill="black" stroke="black" stroke-width="2"/>
 </svg>
-<!----></div> <h1 class="svelte-rc4lx6">Opening Line Database</h1> <p class="svelte-rc4lx6"><strong>10,119</strong> opening lines from works of fiction <br/>in one
-			searchable database</p></div></header><!--]--> <main id="content"><!----><!----> <div id="lotd" class="c svelte-12up0w3"><p class="overline svelte-12up0w3"><span>Line of the Day from <strong>1984 by George Orwell</strong></span> <button><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-glasses"><!--[--><!----><circle cx="6" cy="15" r="4"><!----></circle><!----><!----><circle cx="18" cy="15" r="4"><!----></circle><!----><!----><path d="M14 15a2 2 0 0 0-2-2 2 2 0 0 0-2 2"><!----></path><!----><!----><path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2"><!----></path><!----><!----><path d="M21.5 13 19 7c-.7-1.3-1.5-2-3-2"><!----></path><!----><!--]--><!----><!----></svg><!----></span></button></p> <blockquote class="svelte-12up0w3">“It was a bright cold day in April, and the clocks were striking thirteen.”</blockquote> <p><a href="#">see more details</a></p></div><!----> <div id="search" class="c svelte-1ihbp2v"><h2 class="svelte-1ihbp2v">Search</h2> <div><input id="search-input" type="text" placeholder="Enter a search term..."/> <select><option value="keyword">Keyword</option><option value="title">Title</option><option value="author">Author</option></select> <button id="search-button">Search</button></div></div><!----> <!--[--><!--]--><!----><!----><!----></main><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_sl6t14 = {
-						base: new URL(".", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("./_app/immutable/entry/start.RCZmkh3V.js"),
-						import("./_app/immutable/entry/app.rGrPxviw.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data: [null,{type:"data",data:{},uses:{}}],
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-</body>
-
-</html>
+`;var I=L(`<header class="svelte-rc4lx6"><div class="top svelte-rc4lx6"><div class="acronym svelte-rc4lx6"><strong>OLDb</strong></div> <div class="links svelte-rc4lx6"><a href="#">search</a> <a href="#">submit a book</a> <a href="#">about</a></div></div> <div class="bottom svelte-rc4lx6"><div class="logo svelte-rc4lx6"><!></div> <h1 class="svelte-rc4lx6">Opening Line Database</h1> <p class="svelte-rc4lx6"><strong>10,119</strong> opening lines from works of fiction <br/>in one
+			searchable database</p></div></header>`);function P(k){var s=I(),r=M(n(s),2),l=n(r),C=n(l);j(C,()=>G),p(l),F(4),p(r),p(s),m(k,s)}var Y=L('<!> <main id="content"><!></main>',1);function X(k,s){S(s,!0);const[r,l]=w(),C=()=>u(N,"$page",r);var d=Y(),o=A(d);{var i=e=>{P(e)};H(o,e=>{var a;(a=C().data)!=null&&a.hideHeader||e(i)})}var t=M(o,2),h=n(t);T(h,()=>s.children??R),p(t),m(k,d),U(),l()}export{X as component,W as universal};

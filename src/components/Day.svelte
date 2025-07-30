@@ -28,7 +28,7 @@
 
 	.overline {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: space-between;
 	}
 
