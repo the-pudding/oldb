@@ -21,7 +21,7 @@
 	.c {
 		display: flex;
 		flex-direction: column;
-		max-width: 60rem;
+		max-width: var(--col-width);
 		margin: 32px auto;
 		padding: 16px;
 	}

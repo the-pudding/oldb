@@ -38,6 +38,9 @@
 
 	/* "1" second duration */
 	--1s: 1ms;
+
+	--input-height: 2.5em;
+	--col-width: 60rem;
 }
 
 /* dark theme */
@@ -84,5 +87,21 @@ h1, h2, h3, h4, h5, h6 {
 svg {
 	display: block;
 	width: 100%;
+	height: auto;
+}
+
+button {
+	height: var(--input-height);
+}
+
+
+button.link {
+	background: none;
+	border: none;
+	padding: 0;
+	color: inherit;
+	font: inherit;
+	cursor: pointer;
+	text-decoration: underline;
 	height: auto;
 }
