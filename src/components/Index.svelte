@@ -1,5 +1,6 @@
 <script>
 	import { getContext } from "svelte";
+	import Hero from "$components/Hero.svelte";
 	import Day from "$components/Day.svelte";
 	import Search from "$components/Search.svelte";
 
@@ -9,6 +10,7 @@
 	// const data = getContext("data");
 </script>
 
+<Hero></Hero>
 <Day></Day>
 <Search></Search>
 <svelte:boundary onerror={(e) => console.error(e)}>
