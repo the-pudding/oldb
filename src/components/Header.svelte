@@ -18,8 +18,8 @@
 		</div>
 		<h1>Opening Line Database</h1>
 		<p>
-			<strong>10,119</strong> opening lines from works of fiction <br />in one
-			searchable database
+			The opening line from <strong>10,119</strong> works of fiction in one searchable
+			database
 		</p>
 	</div>
 </header>
@@ -56,16 +56,18 @@
 
 	h1 {
 		line-height: 1;
-		font-size: 1em;
+		font-size: var(--16px);
+		font-size: var(--40px);
 		font-weight: bold;
+		font-family: var(--sans);
 	}
 
 	p {
 		margin: 0;
-		font-size: 2em;
+		font-size: var(--32px);
+		font-size: var(--20px);
 		line-height: 1.25;
 		text-align: center;
-		/* max-width: 18em; */
 	}
 
 	.logo {

@@ -7,6 +7,10 @@
 	import Story from "./Story.svelte";
 	import { cento } from "$runes/cento.svelte.js";
 
+	let expand = $state(false);
+	// sideways arrow
+	let arrow = $derived(expand ? "◄" : "►");
+
 	$effect(() => {
 		cento.lines = [
 			"p",
@@ -23,9 +27,13 @@
 
 <Meta hide={true} />
 
-<div class="c">
+<div class="c" class:expand>
 	<div class="ui">
-		<h1>Cento Fiction Maker</h1>
+		<h1>
+			Cento Fiction Maker <button onclick={() => (expand = !expand)}
+				><span>{arrow}</span></button
+			>
+		</h1>
 		<Tools></Tools>
 		<hr />
 
@@ -45,9 +53,9 @@
 	}
 
 	.ui {
-		position: fixed;
+		/* position: fixed;
 		top: 0;
-		left: 0;
+		left: 0; */
 		display: flex;
 		flex-direction: column;
 		background: lightblue;
@@ -55,14 +63,23 @@
 		margin: 0;
 		height: 100svh;
 		overflow-y: scroll;
-		width: 480px;
+		width: 30%;
+		min-width: 30%;
+		max-width: 480px;
 	}
+
+	.expand .ui {
+		min-width: 65%;
+		width: 65%;
+		max-width: 960px;
+	}
+
 	hr {
 		margin-top: 1em;
 	}
 
 	.story {
-		margin-left: 480px;
+		flex: 1;
 		padding: 1em;
 		background: lightyellow;
 		width: 100%;
@@ -75,5 +92,7 @@
 		font-weight: bold;
 		font-size: var(--20px);
 		margin: 0;
+		display: flex;
+		justify-content: space-between;
 	}
 </style>

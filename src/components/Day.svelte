@@ -21,8 +21,8 @@
 	.c {
 		display: flex;
 		flex-direction: column;
-		max-width: 70em;
-		margin: 2em auto;
+		max-width: 60rem;
+		margin: 32px auto;
 		padding: 16px;
 	}
 
@@ -33,7 +33,7 @@
 	}
 
 	blockquote {
-		font-size: 3.5em;
+		font-size: clamp(1.25rem, 3vw, 3rem);
 		line-height: 1.25;
 		background: var(--color-primary);
 		padding: 32px;

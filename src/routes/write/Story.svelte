@@ -105,6 +105,11 @@
 		margin: 0;
 	}
 
+	:global(.expand .story p) {
+		font-size: var(--18px);
+		line-height: 1.4;
+	}
+
 	.fake-p {
 		position: relative;
 		display: block;
