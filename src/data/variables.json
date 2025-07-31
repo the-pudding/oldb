@@ -23,6 +23,7 @@
     "gray-900": "rgb(38, 38, 38)",
     "gray-1000": "rgb(25, 25, 25)",
     "green": "#40BFAA",
+    "green-light": "#B2E5DD",
     "yellow": "#F5C73D",
     "brown": "#B2774D"
   },

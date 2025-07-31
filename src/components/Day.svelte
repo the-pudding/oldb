@@ -35,7 +35,7 @@
 	blockquote {
 		font-size: clamp(1.25rem, 3vw, 3rem);
 		line-height: 1.25;
-		background: var(--color-primary);
+		background: var(--color-secondary);
 		padding: 32px;
 		border-radius: var(--border-radius);
 	}

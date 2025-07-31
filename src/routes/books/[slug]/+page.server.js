@@ -1,4 +1,4 @@
-import books from "$data/web-all.csv";
+import books from "$data/all.csv";
 
 function clean(str) {
 	return str.toLowerCase().replace(/[^a-z0-9]/g, "");

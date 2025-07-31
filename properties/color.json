@@ -42,6 +42,9 @@
 		"green": {
 			"value": "#40BFAA"
 		},
+		"green-light": {
+			"value": "#B2E5DD"
+		},
 		"yellow": {
 			"value": "#F5C73D"
 		},
