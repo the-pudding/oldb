@@ -1,4 +1,6 @@
 <script>
+	import { base } from "$app/paths";
+
 	const { results } = $props();
 	function clean(id) {
 		return id
@@ -10,7 +12,7 @@
 
 <div class="c">
 	{#each results as { title, author, id } (id)}
-		{@const href = `/books/${clean(id)}`}
+		{@const href = `${base}/books/${clean(id)}`}
 		<div class="result">
 			<p>
 				<a {href}>
