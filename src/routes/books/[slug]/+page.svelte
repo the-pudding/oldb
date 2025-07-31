@@ -10,4 +10,17 @@
 
 <Meta {url} {title} {description} {social}></Meta>
 
-<p>{data.book.id}</p>
+<div>
+	<p>{data.title}</p>
+	<p>{data.author}</p>
+	<p>{data.text}</p>
+</div>
+
+<style>
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 32px;
+	}
+</style>

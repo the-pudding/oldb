@@ -9,8 +9,7 @@
 	</div>
 	<h1>Opening Line Database</h1>
 	<p>
-		The opening line from <strong>10,119</strong> works of fiction in one searchable
-		database
+		A searchable database of <strong>10,912</strong> opening lines from fiction
 	</p>
 </div>
 

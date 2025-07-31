@@ -57,7 +57,7 @@
 		if (browser) {
 			supabase = createClient(
 				"https://dbmtysppmiwwjwaeneex.supabase.co",
-				"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRibXR5c3BwbWl3d2p3YWVuZWV4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NDQ5NTI0NDUsImV4cCI6MTk2MDUyODQ0NX0.i_1JrAfv5fieeVaiJrVIQPL6V0_-H9sR-PKIuGDAIfI"
+				"sb_publishable_4iMeGBcBrV3i_iAemu4tuw_5NDTN77K"
 			);
 		}
 	});

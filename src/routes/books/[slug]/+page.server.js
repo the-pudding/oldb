@@ -1,18 +1,18 @@
-const books = [{ id: "a" }, { id: "b" }];
+import books from "$data/web-all.csv";
 
 function clean(str) {
-	return str.toLowerCase().replace(/\s/g, "");
+	return str.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 export async function load({ params }) {
 	const book = books.find((d) => clean(d.id) === params.slug);
 
 	if (!book) {
-		throw error(404, "Book not found");
+		throw new Error(404, "Book not found");
 	}
 
 	return {
-		book
+		...book
 	};
 }
 
