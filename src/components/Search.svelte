@@ -11,7 +11,6 @@
 	let query = $state("");
 	let column = $state("text");
 	let disabled = $state(false);
-	$inspect(results);
 
 	export async function search(e) {
 		e.preventDefault();
@@ -26,11 +25,13 @@
 			disabled = true;
 			const { data, error } = await supabase
 				.from("oldb")
-				.select("id,title,author")
+				.select("id,title,author,text,vetted,tier")
 				.textSearch(column, query.trim(), {
 					type: "websearch"
 				})
-				.order("title", { ascending: true })
+				.order("vetted", { ascending: false }) // "human" comes before other values
+				.order("tier", { ascending: false }) // descending order of tier
+				.order("title", { ascending: true }) // ascending title
 				.limit(100);
 
 			if (error) {

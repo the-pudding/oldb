@@ -9,7 +9,7 @@
 
 	$effect(async () => {
 		const response = await fetch(
-			`https://pudding.cool/projects/oldb-data/latest.json?version=${Date.now()}`
+			`https://pudding.cool/projects/oldb-data/latest.json?v=${Date.now()}`
 		);
 		if (response.ok) {
 			const data = await response.json();

@@ -11,14 +11,24 @@
 </script>
 
 <div class="c">
-	{#each results as { title, author, id } (id)}
+	{#each results as { title, text, author, id } (id)}
 		{@const href = `${base}/books/${clean(id)}`}
+		{@const truncated =
+			text.length > 100 ? text.slice(0, text.indexOf(" ", 200)) + "..." : text}
 		<div class="result">
-			<p>
-				<a {href}>
-					<strong>{title}</strong> by {author}
-				</a>
+			<p class="text">
+				{truncated}
 			</p>
+			<a {href}>
+				<strong>{title}</strong> by {author}
+			</a>
 		</div>
 	{/each}
 </div>
+
+<style>
+	.text {
+		display: flex;
+		flex-direction: column;
+	}
+</style>

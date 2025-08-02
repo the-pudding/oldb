@@ -26,6 +26,8 @@
 				></CircleUserRound>{:else}<Bot></Bot>{/if}
 		</span>{data.text}
 	</blockquote>
+
+	<code>{JSON.stringify(data, null, 2)}</code>
 </div>
 
 <style>
