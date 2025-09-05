@@ -14,7 +14,7 @@
 
 	export async function search(e) {
 		e.preventDefault();
-		console.time("search");
+		// console.time("search");
 		if (!query || query.trim() === "") {
 			err = "Please enter a search term.";
 			results = null;
@@ -32,7 +32,7 @@
 				.order("vetted", { ascending: false }) // "human" comes before other values
 				.order("tier", { ascending: false }) // descending order of tier
 				.order("title", { ascending: true }) // ascending title
-				.limit(100);
+				.limit(500);
 
 			if (error) {
 				console.error("Search error:", error);
@@ -51,7 +51,7 @@
 			disabled = false;
 		}
 
-		console.timeEnd("search");
+		// console.timeEnd("search");
 	}
 
 	$effect(() => {
@@ -64,12 +64,12 @@
 	});
 </script>
 
-<div id="search" class="c">
-	<h2>Database Search</h2>
+<section id="search" class="c">
+	<h2>Search</h2>
 
 	<form class="ui" onsubmit={search}>
 		<div class="input-group">
-			<label for="search-input">Search</label>
+			<label for="search-input">Term</label>
 			<input
 				id="search-input"
 				type="text"
@@ -97,29 +97,17 @@
 			<p class="error">{err}</p>
 		{:else if results}
 			{#if results.length > 0}
-				<Results {results} />
+				{#key query}
+					<Results {results} />
+				{/key}
 			{:else}
 				<p class="no-results">No results found.</p>
 			{/if}
 		{/if}
 	</div>
-</div>
+</section>
 
 <style>
-	.c {
-		display: flex;
-		flex-direction: column;
-		max-width: var(--col-width);
-		margin: 32px auto;
-		padding: 16px;
-	}
-
-	h2 {
-		font-size: var(--28px);
-		margin-bottom: 16px;
-		font-weight: bold;
-	}
-
 	.ui {
 		display: flex;
 		align-items: flex-end;

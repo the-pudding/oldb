@@ -2,10 +2,10 @@
 	// shadow, plain, line, bubble
 	import { format, timeFormat } from "d3";
 	import logo from "$svg/oldb-logo.svg";
+	import { ready } from "$runes/misc.svelte.js";
 
 	let count = $state("over 10,000");
 	let updated = $state("since August 1, 2025");
-	let ready = $state(false);
 
 	$effect(async () => {
 		const response = await fetch(
@@ -18,7 +18,7 @@
 		} else {
 			console.error("Failed to fetch the latest data");
 		}
-		ready = true;
+		ready.state = true;
 	});
 </script>
 
@@ -28,7 +28,9 @@
 	</div>
 	<h1>Opening Line Database</h1>
 	<p class="tagline">A searchable database of opening lines from fiction</p>
-	<p class="meta" class:ready><strong>{count}</strong> books {updated}</p>
+	<p class="meta" class:ready={ready.state}>
+		<strong>{count}</strong> books {updated}
+	</p>
 </div>
 
 <style>

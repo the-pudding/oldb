@@ -1,20 +1,20 @@
 <script>
-	import Glasses from "@lucide/svelte/icons/Glasses";
+	import Glasses from "@lucide/svelte/icons/glasses";
 </script>
 
 <div id="lotd" class="c">
 	<p class="overline">
 		<span>Line of the Day from <strong>1984 by George Orwell</strong></span>
-		<button><span><Glasses></Glasses></span></button>
+		<a href="#test" role="button"
+			><span aria-label="See more details"><Glasses></Glasses></span></a
+		>
 	</p>
 
 	<blockquote>
 		It was a bright cold day in April, and the clocks were striking thirteen.
 	</blockquote>
 
-	<p>
-		<a href="#">see more details</a>
-	</p>
+	<p></p>
 </div>
 
 <style>
