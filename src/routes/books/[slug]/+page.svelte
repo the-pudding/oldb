@@ -1,5 +1,6 @@
 <script>
 	import Meta from "$components/Meta.svelte";
+	import XRay from "$components/XRay.svelte";
 	import CircleUserRound from "@lucide/svelte/icons/circle-user-round";
 	import Bot from "@lucide/svelte/icons/bot";
 
@@ -8,6 +9,8 @@
 	const description = "";
 	const url = "";
 	const social = "";
+
+	const { text, adjectives, nouns, verbs } = data;
 </script>
 
 <Meta {url} {title} {description} {social}></Meta>
@@ -24,7 +27,10 @@
 		<span class="vetted">
 			{#if data.vetted === "human"}<CircleUserRound
 				></CircleUserRound>{:else}<Bot></Bot>{/if}
-		</span>{data.text}
+		</span>
+		<span class="xray">
+			<XRay {text} {adjectives} {nouns} {verbs}></XRay>
+		</span>
 	</blockquote>
 
 	<code>{JSON.stringify(data, null, 2)}</code>
